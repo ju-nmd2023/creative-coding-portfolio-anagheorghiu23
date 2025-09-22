@@ -63,8 +63,8 @@ function drawLayers(x, y, size, layers) {
 // function taken from the example :) its easier to note what is mine :))
 function draw() {
   background(0, 0, 0);
-  // background(255, 255, 255);
-  for (let y = 0; y < 10; y++) {
+  translate(width / 4, 50);
+  for (let y = 0; y < 9; y++) {
     for (let x = 0; x < 10; x++) {
       drawLayers(
         size / 2 + x * size * 0.8,
@@ -74,5 +74,4 @@ function draw() {
       );
     }
   }
-  // noLoop();
 }

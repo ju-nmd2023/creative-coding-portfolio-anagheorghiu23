@@ -1,24 +1,19 @@
 //the following 6 lines of code are taken from Garrits example :)
 function setup() {
-  createCanvas(innerWidth, innerHeight);
-  frameRate(10);
+  createCanvas(700, 680);
   background(255, 255, 255);
   noFill();
 }
 
-const layers = 10;
+function drawLayers(x, y) {
+  beginShape();
 
-function drawLayers(x, y, layers) {
-  for (let i = 0; i < layers; i++) {
-    beginShape();
-
-    for (let i = 0; i < 50; i += 0.05) {
-      k = cos(i) * x;
-      l = sin(i) * y;
-      vertex(k, l);
-    }
-    endShape(CLOSE);
+  for (let i = 0; i < 50; i += 0.05) {
+    k = cos(i) * x;
+    l = sin(i) * y;
+    vertex(k, l);
   }
+  endShape(CLOSE);
 }
 
 function randomColor() {
@@ -30,7 +25,7 @@ function randomColor() {
 }
 
 function draw() {
-  //
+  // translate(width / 4, 50);
   for (let y = 0; y < 10; y++) {
     for (let x = 0; x < 10; x++) {
       if (mouseIsPressed) {
@@ -38,7 +33,7 @@ function draw() {
         background(255, 255, 255);
       } else {
         // if(){
-        drawLayers(x * 75, y * 75, layers);
+        drawLayers(x * 75, y * 75);
         rect(0, 0, 675, 675);
       }
     }

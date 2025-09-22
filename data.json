@@ -1,22 +1,32 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
-  },
-  {
     "file": "experiments/molnar.js",
-    "name": "Name of your experiment",
+    "name": "Red Squares",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
   },
   {
     "file": "experiments/rotate-molnar.js",
-    "name": "Name of your experiment",
+    "name": "Spiral",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
   },
   {
     "file": "experiments/circle-molnar.js",
-    "name": "Name of your experiment",
+    "name": "Grid",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+  },
+  {
+    "file": "experiments/noise.js",
+    "name": "Clouds",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+  },
+  {
+    "file": "experiments/noise-movement.js",
+    "name": "Liquid thread",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+  },
+  {
+    "file": "experiments/gravity.js",
+    "name": "Meteor",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
   }
 ]
