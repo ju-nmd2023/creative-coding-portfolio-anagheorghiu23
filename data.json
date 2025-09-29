@@ -28,5 +28,10 @@
     "file": "experiments/gravity.js",
     "name": "Meteor",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+  },
+  {
+    "file": "experiments/handpose.js",
+    "name": "Musical Hands",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
   }
 ]
