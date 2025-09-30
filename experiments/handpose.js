@@ -21,12 +21,13 @@ function setup() {
 let chorus;
 let synth;
 let oscillator;
+let counter2 = 0;
+let counter = 0;
 
 window.addEventListener("load", () => {
-  chorus = new Tone.Chorus(4, 2.5, 0.5).toDestination().start();
-  synth = new Tone.PolySynth().connect(chorus);
-
-  //   oscillator = new Tone.Oscillator(440, "sine").toDestination();
+  //   chorus = new Tone.Chorus(4, 2.5, 0.5).toDestination().start();
+  //   synth = new Tone.PolySynth().connect(chorus);
+  synth = new Tone.PolySynth().toDestination();
 });
 
 function synthSound() {
@@ -43,9 +44,9 @@ function synthSound() {
       release: 0.8,
     },
   });
-  chorus.frequency.value = 2;
-  chorus.delayTime = 2.5;
-  chorus.depth = 0.2;
+  //   chorus.frequency.value = 2;
+  //   chorus.delayTime = 2.5;
+  //   chorus.depth = 0.2;
 }
 
 function draw() {
@@ -59,27 +60,32 @@ function draw() {
 
     let distance = dist(indexFinger.x, indexFinger.y, thumb.x, thumb.y);
 
-    if (distance < 40) {
+    if (distance < 50) {
       var loop1 = new Tone.Loop(function (time) {
-        synth.triggerAttackRelease(["C3", "E3"]);
+        //     synth.triggerAttackRelease(["C3", "E3"]);
+        //   }, "4n").start(0);
+        synth.triggerAttackRelease("C3");
       }, "4n").start(0);
       Tone.Transport.start();
+      counter2 = counter + 2;
     } else {
       Tone.Transport.stop();
     }
-    if (distance > 40 && distance < 70) {
+    if (distance > 50 && distance < 150) {
       var loop2 = new Tone.Loop(function (time) {
-        synth.triggerAttackRelease(["D3", "F3"]);
+        synth.triggerAttackRelease("G3");
       }, "4n").start(0);
       Tone.Transport.start();
+      counter2 = counter + 2;
     } else {
       Tone.Transport.stop();
     }
-    if (distance > 70 && distance < 100) {
+    if (distance > 150 && distance < 255) {
       var loop3 = new Tone.Loop(function (time) {
-        synth.triggerAttackRelease(["E3", "G3"]);
+        synth.triggerAttackRelease("B3");
       }, "4n").start(0);
       Tone.Transport.start();
+      counter2 = counter + 2;
     } else {
       Tone.Transport.stop();
     }
@@ -138,6 +144,10 @@ function draw() {
 function getHandsData(results) {
   hands = results;
 }
+
+setInterval(() => {
+  counter = counter + 1;
+}, 1000);
 
 window.addEventListener("click", () => {
   synthSound();
