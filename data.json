@@ -1,37 +1,37 @@
 [
   {
     "file": "experiments/molnar.js",
-    "name": "Red Squares",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "name": "Red ?Squares?",
+    "description": "I have taken inspiration from Vera Molnár squares, but I have experimted with hourglasses. One hourglass is perfectly straight, and on top of it, there is a an asymmetric one. "
   },
   {
     "file": "experiments/rotate-molnar.js",
     "name": "Spiral",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "description": "While trying to figure out different grids, I have realized that I can put the squares in a spiral. It's also interactive, as you can place the center of the spiral anywhere on the canvas"
   },
   {
     "file": "experiments/circle-molnar.js",
     "name": "Grid",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "description": "Also another experiment of grids I have discovered while trying to make the spiral :). You can click it to change its color."
   },
   {
     "file": "experiments/noise.js",
     "name": "Clouds",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "description": "Using the noise function I have represented some purple clouds in layers"
   },
   {
     "file": "experiments/noise-movement.js",
     "name": "Liquid thread",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "description": "I wanted to see what I can do with the noise function that also moves, and I have represented a 'liquid thread'. It's mimicking an ink ripple."
   },
   {
     "file": "experiments/gravity.js",
     "name": "Meteor",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "description": "I liked the idea of multiple centers of gravity, so here it is. 'The meteor' leaves a trail behind it so you can see the path it took and which gravity center it gravitated around. You can also click to reset the meteor to the mouse's position."
   },
   {
     "file": "experiments/handpose.js",
     "name": "Musical Hands",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? What is the inspiration?"
+    "description": "Here you can play music by tapping a square with your index finger. It's like a digital instrument :)"
   }
 ]

@@ -1,3 +1,5 @@
+// this is not part of the portofolio I took notes during class its not added anywhere
+
 let position;
 let velocity;
 let acceleration;
